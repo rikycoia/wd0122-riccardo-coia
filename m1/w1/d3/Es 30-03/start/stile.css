@@ -1,0 +1,39 @@
+/* IMPOSTAZIONI GENERALI */
+body {text-align: center;}
+body {margin left: 100px;}
+body {margin left: 100px;;}
+body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+/* HEADER */
+
+h1 {text-transform: uppercase;}
+h1 {color: blue;}
+span{background-color: aliceblue;}
+header {font-size: 3em;}
+header {background-color: rgb(78, 157, 209);}
+
+/* MAIN */
+
+div {text-align: center;}
+
+
+h2 {color: aqua;}
+h2 {font-weight: bold;}
+h2{text-transform: uppercase;}
+
+ul {list-style-type: circle;}
+
+blockquote {background-color: grey;}
+blockquote {font-size: 2em;}
+blockquote p {margin-left: 100px;} 
+blockquote {margin right: 100px;}
+
+
+
+/* ELEMENTI NEL MAIN */
+
+
+
+
+/* FOOTER */
+footer {background-color: rgb(182, 182, 182);}
