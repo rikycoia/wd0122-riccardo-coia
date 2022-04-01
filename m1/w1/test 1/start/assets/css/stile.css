@@ -1,0 +1,68 @@
+/**GENERALE**/
+
+body {font-family: sans-serif;
+color: #393d41;
+font-size: 1.2 rem;
+line-height: 1.65;
+text-align: center;
+margin-left: auto;}
+img {width: 100%;height: 100%;}
+
+/**---HEADER--**/
+
+header {margin: 20px;
+    border: #eae6e6;
+    border-style: solid;
+padding: 10px 10px 10px 10px;}
+header div {background-image: url("../images/banner.jpg");
+    background-size: cover;}
+
+
+header h1 {font-family: montserrat ;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.2 rem;}
+    header p {font-family: montserrat;
+    line-height: 1.5;
+font-size: 0.8rem;}
+
+
+header{text-align: center;}
+header h1 {color: #39accc;
+text-transform: uppercase;}
+header .bottone {background-color: #f04c2f;
+font-weight: 700;
+color: #fff;
+text-decoration: none;
+padding: 7x 15px;}
+
+/**---MAIN--**/
+main section {margin: 20px;
+    border: #b7b7b7;
+    border-style: solid;}
+
+main h2 {font-weight: bold;
+        color: rgb(0, 255, 204);
+    text-align: center;}
+
+    main article section img {border-radius: 100%;}
+    main article section div {padding: 0%;}
+    main div {background-color: #f04c2f;}
+    main div h2 {color: white;}
+    main div p {color: white ;}
+
+    /**ASIDE**/
+    aside div {
+border: #b7b7b7;
+                border-style: solid;}
+
+    /**--FOOTER--**/
+    footer {margin: 20px;
+    border: #5c5c5c;
+    border-style: solid;    }
+     footer {background-color: #25a2c3;
+             color: #c8e7f0;}
+footer h2 {font-weight: bold;
+        }
+
+     footer ul li {color: white;}           
