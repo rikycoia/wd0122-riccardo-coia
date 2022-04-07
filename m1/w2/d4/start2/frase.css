@@ -1,0 +1,86 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 150px;
+      
+}
+
+
+div {
+    
+      height: 100px;
+      width: 600px;
+      border: solid 1px;
+      border-color: black ;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+span {font-style: italic;
+      color: aqua;  
+}
+
+#parola1 {
+         position: absolute;
+          animation-name: scomparsa1;
+          animation-duration: 10s;
+          animation-delay: 3s;
+          animation-iteration-count: infinite;
+          transform: translate(-10px);
+}
+
+#parola2 {
+    position: absolute;
+     animation-name: scomparsa2;
+     animation-duration: 10s;
+     animation-delay: 6s;
+     animation-iteration-count: infinite;
+     transform: translate(-10px);
+}
+
+
+#parola3 {
+    
+        position: absolute;
+         animation-name: scomparsa3;
+         animation-duration: 10s;
+         animation-delay: 9s;
+         animation-iteration-count: infinite;
+         transform: translate(-10px)
+}
+
+
+
+ @keyframes scomparsa1  {
+     0%{opacity: 0; transform:translateY(-20px); }
+     5%,20% {opacity: 1; transform:translateY(0px); } 
+     25%,100% {opacity: 0; transform:translateY(20px); }
+ }    
+
+
+ @keyframes scomparsa2  {
+    0%{opacity: 0; transform:translateY(-20px); }
+    5%,20% {opacity: 1; transform:translateY(0px); } 
+    25%,100% {opacity: 0; transform:translateY(20px); }
+}    
+
+
+@keyframes scomparsa3  {
+    0%{opacity: 0; transform:translateY(-20px); }
+    5%,20% {opacity: 1; transform:translateY(0px); } 
+    25%,100% {opacity: 0; transform:translateY(20px); }
+}    

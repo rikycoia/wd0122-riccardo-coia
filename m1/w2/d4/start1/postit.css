@@ -1,0 +1,169 @@
+/**LAVAGNA**/
+
+.lavagna {
+    background-color: rgb(95, 90, 90);
+    height: 400px;
+    width: 700px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.lavagna {
+           display: flex;
+           
+
+        
+        }
+
+/**POST IT**/
+
+.postit {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              flex-direction: row;
+              margin-top: 50px;
+              margin-bottom: 50px;
+              margin-left: 20px;
+              margin-right: 20px;
+              justify-content: space-between;
+              text-align: center;
+              font-style: italic;
+              line-height: 100px;}
+
+ /**ANIMAZIONE**/
+
+  .post1:hover {
+               transform: rotate(0deg);
+                transform: scale(1.5); 
+             transition: transform 1s;
+            z-index: 1;}
+
+  .post2:hover {
+                transform: rotate(0deg);
+                transform: scale(1.5);
+                transition: transform 1s;
+            z-index: 1;}
+                
+  .post3:hover {
+                    transform: rotate(0deg);
+                     transform: scale(1.5);
+                     transition: transform 1s;
+                     z-index: 1;}
+ .post4:hover {
+                     transform: rotate(0deg);
+                     transform: scale(1.5);
+                     transition: transform 1s;
+                   z-index: 1;}              
+                
+                          
+ .post5:hover {
+                 transform: rotate(0deg);
+                 transform: scale(1.5);
+                 transition: transform 1s;
+                 z-index: 1;}
+         
+  .post6:hover {
+                 transform: rotate(0deg);
+                 transform: scale(1.5);
+                 transition: transform 1s;
+                 z-index: 1;}
+
+                 .post7:hover {
+                    transform: rotate(0deg);
+                     transform: scale(1.5);
+                     transition: transform 1s;
+                     z-index: 1;}
+     
+  .post8:hover {
+                     transform: rotate(0deg);
+                     transform: scale(1.5);
+                     transition: transform 1s;
+                     z-index: 1;}
+                                     
+
+
+            
+
+
+/**STILE POST IT**/
+.post1 {
+         height: 100px; 
+         width: 150px;  
+         border: solid 0.5px;
+         border-color: black;
+         background: linear-gradient(rgb(239, 239, 132),white);
+         transform: rotate(-3deg);
+         box-shadow: 1px;
+        
+         
+         
+}
+
+.post2 {
+    height: 100px; 
+    width: 150px;   
+    border: solid 0.5px;
+    border-color: black;
+    background-color: rgba(127, 255, 212, 0.908);
+    transform: rotate(3deg);
+}
+
+.post3 {
+    height: 100px; 
+    width: 150px;   
+    border: solid 0.5px;
+    border-color: black;
+    background-color: rgb(190, 149, 228);
+    transform: rotate(-3deg);
+}
+
+
+.post4 {
+    height: 100px; 
+    width: 150px;   
+    border: solid 0.5px;
+    border-color: black;
+    background-color: rgba(127, 255, 212, 0.908);
+    transform: rotate(3deg);
+}
+
+
+.post5 {
+    height: 100px; 
+    width: 150px;   
+    border: solid 0.5px;
+    border-color: black;
+    background: linear-gradient(rgb(239, 239, 132),white);
+    transform: rotate(-3deg);
+}
+
+
+.post6 {
+    height: 100px; 
+    width: 150px;   
+    border: solid 0.5px;
+    border-color: black;
+    background-color: rgb(190, 149, 228);
+    transform: rotate(-3deg);
+}
+
+
+.post7 {
+    height: 100px; 
+    width: 150px;   
+    border: solid 0.5px;
+    border-color: black;
+    background: linear-gradient(rgb(239, 239, 132),white);
+    transform: rotate(3deg);
+}
+
+
+.post8 {
+    height: 100px; 
+    width: 150px;   
+    border: solid 0.5px;
+    border-color: black;
+    background-color: rgba(127, 255, 212, 0.908);
+    transform: rotate(3deg);
+}
