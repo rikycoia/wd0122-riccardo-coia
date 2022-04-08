@@ -1,0 +1,89 @@
+body{
+    font-size: 1.5rem;
+    font-family: fira sans;
+    line-height: 1.8;
+    color: #000;
+    overflow: hidden;
+    
+    
+}
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+button {
+    box-sizing: 1.9rem;
+    height: 50px;
+    width: 150px;
+    color: white;
+    background: linear-gradient(#6cc1e2,#392f7a);
+    text-align: center;
+    margin-left: 175px;
+}
+ 
+  
+
+/* HEADER */
+
+header{
+    box-shadow: 0 7px 15px;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 2px 20px;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+
+
+
+#menu{
+    
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+#apri-menu {
+    display: none;
+}
+
+input:checked + #menu{
+    height: 75px;
+}
+ h2{text-align: center;}
+
+ form {
+        text-align: center;
+ }
+
+ section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+ }
+
+ /* FOOTER */
+
+footer {
+    background-color: rgb(221, 221, 221);
+    text-align: left;
+    
+}
+
+footer .icofoot {
+    color: #e42424;
+    text-align: left;
+    size: 1.3rem;
+
+}

@@ -1,0 +1,133 @@
+/* IMPOSTAZIONI GENERALI */
+
+body{
+    font-size: 1.5rem;
+    font-family: fira sans;
+    line-height: 1.8;
+    color: #000;
+    overflow: hidden;
+    
+    
+}
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+button {
+    box-sizing: 1.9rem;
+    height: 50px;
+    width: 150px;
+    color: white;
+    background: linear-gradient(#6cc1e2,#392f7a);
+    text-align: center;
+    margin-left: 175px;
+}
+  
+
+/* HEADER */
+
+header{
+    box-shadow: 0 7px 15px;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 2px 20px;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+
+
+
+#menu{
+    
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+#apri-menu {
+    display: none;
+}
+
+input:checked + #menu{
+    height: 75px;
+}
+
+
+
+/* MAIN */
+.div1 {color: white;
+    text-align: left;}
+
+.div1 img{
+    
+    width: 500px;
+    height: auto;
+}
+
+.div1 button {
+          background-color: #0c0633;
+          color: white;
+          text-align: center;
+
+}
+
+.div1 {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+}
+
+.dv-di-oggi {
+            background-color: #0c0633;
+            color: white;
+            padding: 5vh;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            }
+           
+
+/**SECTION1**/
+.section1 {
+    flex-direction: column;
+    text-align: center;
+}
+.section1 i {color: #e42424;}
+.section1 div {
+    text-align: center;}
+
+
+/**SECTION2**/
+.section2{
+        flex-direction: column;
+        text-align: center;       
+}
+
+.section2 i {color: #e42424;}
+
+.section2 img {
+                width: 500px;
+                height: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(201, 200, 200);
+    text-align: center;
+    
+}
+
+footer div i {color: #e42424;}
+
+/* RESPONSIVE */
