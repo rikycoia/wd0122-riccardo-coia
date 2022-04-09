@@ -22,7 +22,7 @@ button {
     color: white;
     background: linear-gradient(#6cc1e2,#392f7a);
     text-align: center;
-    margin-left: 175px;
+    
 }
  
   
@@ -43,6 +43,15 @@ header{
     flex-wrap: wrap;
     align-items: center;
    
+}
+
+  /**CONTATTI*/
+
+main{ 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
 }
 
 

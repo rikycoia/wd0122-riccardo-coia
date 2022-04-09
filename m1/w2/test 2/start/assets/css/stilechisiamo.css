@@ -19,7 +19,7 @@ h2{
 button {
     box-sizing: 1.9rem;
     height: 50px;
-    width: 150px;
+    width: 170px;
     color: white;
     background: linear-gradient(#6cc1e2,#392f7a);
     text-align: center;
@@ -98,9 +98,7 @@ footer {
     text-align: left;
     
 }
-form {
-    text-align: center;
-}
+
 
 footer .icofoot {
     color: #e42424;
@@ -110,4 +108,20 @@ footer .icofoot {
  .section3 {
             display: flex;
             flex-direction: column;
+ }
+
+ @media screen and ( min-width: 800px ) {
+     .section1 {display: flex;
+                flex-direction: row; 
+                justify-content: space-between;           
+    }
+
+    .section3 {display: flex;
+                  flex-direction: row; 
+                  justify-content: space-between;             
+    }
+        .tabella {
+                    display: none;
+        }
+
  }

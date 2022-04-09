@@ -1,0 +1,13 @@
+@media screen and ( min-width: 800px ) {
+
+        .row {display:flex;
+              flex-direction: row;
+              justify-content: space-between;
+        }
+
+        .foto1 {justify-content: left;}
+
+        footer {flex-direction: row;}
+
+        
+}

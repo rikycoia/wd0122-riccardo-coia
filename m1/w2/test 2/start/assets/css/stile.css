@@ -20,11 +20,11 @@ h2{
 button {
     box-sizing: 1.9rem;
     height: 50px;
-    width: 150px;
+    width: 175px;
     color: white;
     background: linear-gradient(#6cc1e2,#392f7a);
     text-align: center;
-    margin-left: 175px;
+    
 }
   
 
@@ -130,4 +130,22 @@ footer {
 
 footer div i {color: #e42424;}
 
+.section3 {
+        display: flex;
+        flex-direction: column;
+}
+
 /* RESPONSIVE */
+@media screen and ( min-width: 800px ) {
+
+    .row {display:flex;
+          flex-direction: row;
+          justify-content: space-between;
+    }
+
+    .foto1 {justify-content: left;}
+
+    footer {flex-direction: row;}
+
+    
+}
