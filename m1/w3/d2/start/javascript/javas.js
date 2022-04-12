@@ -54,3 +54,11 @@ if(eta >=21 && eta <= 100){
     }
 
 
+var z = 5
+console.log ("è " + (z < 3) + "che z < 3 ")
+
+if (z < 3) {
+  console.log("è vero che z<5")
+} else {
+  console.log ("è falso che z<5")
+}
