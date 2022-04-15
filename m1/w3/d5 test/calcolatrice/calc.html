@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="calc">
+
+<div class="display">
+    <input  type="text" name="" id="display">
+</div>
+
+<div class="tasti">
+<div class="row1">
+    <button  class="tasto" data-numero="1" onclick="aggiungiNumero(this)">7</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">8</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">9</button>
+    <button class="tasto" id="divisione" onclick="aggiungiNumero(this)">/</button>
+</div>
+
+<div class="2row">
+    <button class="tasto" onclick="aggiungiNumero(this)">4</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">5</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">6</button>
+    <button class="tasto" id="moltip" onclick="moltiplicazione(this)">X</button>
+</div>
+
+<div class="3row">
+    <button class="tasto" onclick="aggiungiNumero(this)">1</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">2</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">3</button>
+    <button class="tasto" id="sottr" onclick="aggiungiNumero(this)">-</button>
+</div>
+    <button class="tasto" onclick="del('')">C</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">0</button>
+    <button class="tasto" onclick="aggiungiNumero(this)">.</button>
+    <button class="tasto" id="add" onclick="aggiungiNumero(this)">+</button>    
+</div>   
+<div class="uguale">
+    <button id="=" onclick="risultato()">=</button>
+</div> 
+
+
+
+</div>
+    
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>
