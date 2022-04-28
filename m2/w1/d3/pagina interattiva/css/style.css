@@ -1,0 +1,54 @@
+.menu{
+        background-color: #66d18f;
+        color: white;
+        width: 300px;
+        padding: 20px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;   
+}
+
+.menu:hover,
+.menu:focus {
+    background-color: #37a0f0;
+}
+
+.tendina{
+    position: relative;
+    display: inline-block;
+}
+
+.tendina a:hover {
+    background-color: #caccd1
+}
+
+
+.pushit {
+    display: none;
+    position: absolute;
+    background-color: #4b4b4e;
+    width: 300px;
+    text-align: center;
+    overflow: auto;    
+}
+
+.pushit a{
+    color: rgb(247, 242, 242);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.espandi {
+    display: block;
+}
+
+
+.fatto {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.selezione {
+    color: #F00;
+}
