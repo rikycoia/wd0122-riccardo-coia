@@ -1,0 +1,50 @@
+@import 'variabili';
+@import 'button';
+
+body{
+    background-color: purple;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.showcase-content{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: white;
+    padding-left: 10px;
+}
+
+.testo p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+
+a{
+    text-decoration: $href;
+}
+
+
+
