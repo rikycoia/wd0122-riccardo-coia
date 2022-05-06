@@ -1,0 +1,154 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+@import "../scss/funcion";
+
+$sfondo: rgb(43, 43, 94);
+
+.navbar{
+    background-color: $sfondo;
+    color: set-color-pro($sfondo,red);
+}
+
+.navbar li{
+    font-style: italic;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+main{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#prima-section{
+    background: url("../img/pexels-aleksandar-pasaric-325185.jpg") no-repeat 0 -200px;
+    height: 600px;
+    padding: 30px 0;
+}
+
+.btn{
+    background-color: black;
+    width: 30%;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.container-2{
+    padding-top: 30px;
+}
+
+.container-3{
+    padding-top: 30px;
+}
+
+.servizi {
+    text-align: center;
+}
+
+.servizi i{
+    color: red;
+    font-size: 1.7rem;
+}
+
+.servizi p{
+    padding-left:  100px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.partnership{
+    padding-top: 30px;
+ 
+
+}
+
+.partnership h3{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+
+.wrapper .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .card{
+    background: #fff;
+    width: 400px;
+    height:100px;
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    padding: 10px;
+    opacity: 0;
+    overflow:hidden;
+    pointer-events: none;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+  }
+  .outer:hover .card{
+    animation-play-state: paused;
+  }
+  .wrapper .card:last-child{
+    animation-delay: calc(-3s * var(--delay));
+  }
+  @keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translateY(100%) scale(0.5);
+    }
+    5%, 20%{
+      opacity: 0.4;
+      transform: translateY(100%) scale(0.7);
+    }
+    25%, 40%{   
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0%) scale(1);
+    }
+    45%, 60%{
+      opacity: 0.4;
+      transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100%{
+      opacity: 0;
+      transform: translateY(-100%) scale(0.5);
+    }
+  }
+  
+  
+  .image img{
+      height: 80px;
+    width: 80px;
+    border-radius:6px;
+  }
+  
+  .content p {
+      font-size:9px;
+      font-weight:400;
+  }
+  
+  .ratings i{
+      font-size:10px;
+      color:orange;
+  }
+
+  .carousel{
+      padding-top: 250px;
+      padding-bottom: 250px;
+  }
+
+  .container-5{
+    background-color: rgb(43, 43, 94);
+    color: white;
+  }
