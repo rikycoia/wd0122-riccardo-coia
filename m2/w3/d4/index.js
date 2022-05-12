@@ -11,6 +11,10 @@ app.get('/contatti', (req,res) => {
     res.sendFile(__dirname +'/contatti.html')
 })
 
+app.get('/footer', (req,res) => {
+    res.sendFile(__dirname +'/footer.html')
+})
+
 
 app.listen(3000, () => {
     console.log('Server running at http://127.0.0.1:3000')
