@@ -20,14 +20,15 @@ class FirstUser implements ISmartphone{
         this.carica = 20;
    } 
 
-     public Ricarica(ric:number): void {
-       //   this.carica =+ ric 
-    this.carica = this.carica + ric;
+     public Ricarica(ric:number): number {
+          this.carica = this.carica + ric;
+          return this.carica;
    }
 
-   public Chiamata(min:number):any {
+   public Chiamata(min:number):number {
        this.carica = this.carica - (0.20 * min)
        this.minutiChiamate = this.minutiChiamate + min;
+       return this.minutiChiamate
    }
 
    public Number404():number {
@@ -46,8 +47,8 @@ class FirstUser implements ISmartphone{
 
 let user1 = new FirstUser(20,15)
 
-//console.log(user1.Ricarica(15) + ' €');
-console.log('hai effettuato ' + user1.Chiamata(5) + ' minuti di chiamata');
+console.log(user1.Ricarica(15) + ' €');
+console.log('Hai effettuato ' + user1.Chiamata(5) + ' minuti di chiamata');
 console.log('Il tuo credito residuo è di ' + user1.Number404() + ' €');
 console.log('Hai effettutato ' + user1.NumeroChiamate() + ' chiamate');
 
@@ -66,15 +67,16 @@ class SecondUser implements ISmartphone{
         this.carica = 20;
    } 
 
-   public Ricarica(ric:number): void {
-       //this.creditoIniziale =+ x 
-       this.carica = this.carica + ric;
-   }
+   public Ricarica(ric:number): number {
+    this.carica = this.carica + ric;
+    return this.carica;
+}
 
-   public Chiamata(min:number):void {
-       this.carica = this.carica - (0.20 * min)
-       this.minutiChiamate = this.minutiChiamate + min;
-   }
+public Chiamata(min:number):number {
+ this.carica = this.carica - (0.20 * min)
+ this.minutiChiamate = this.minutiChiamate + min;
+ return this.minutiChiamate
+}
 
    public Number404():number {
    return this.carica
@@ -94,7 +96,7 @@ class SecondUser implements ISmartphone{
 let user2 = new SecondUser(5,50)
 console.log(user2);
 
-//console.log(user2.Ricarica(15) + ' €');
+console.log(user2.Ricarica(15) + ' €');
 console.log('hai effettuato ' + user2.Chiamata(15) + ' minuti di chiamata');
 console.log('Il tuo credito residuo è di ' + user2.Number404() + ' €');
 console.log('Hai effettutato ' + user2.NumeroChiamate() + ' chiamate');
@@ -112,15 +114,16 @@ class ThirdUser implements ISmartphone{
         this.carica = 20;
    } 
 
-   public Ricarica(ric:number): void {
-       //this.creditoIniziale =+ x 
-       this.carica = this.carica + ric;
-   }
+   public Ricarica(ric:number): number {
+    this.carica = this.carica + ric;
+    return this.carica;
+}
 
-   public Chiamata(min:number):void {
-       this.carica = this.carica - (0.20 * min)
-       this.minutiChiamate = this.minutiChiamate + min;
-   }
+public Chiamata(min:number):number {
+ this.carica = this.carica - (0.20 * min)
+ this.minutiChiamate = this.minutiChiamate + min;
+ return this.minutiChiamate
+}
 
    public Number404():number {
    return this.carica
@@ -140,8 +143,8 @@ class ThirdUser implements ISmartphone{
 let user3 = new ThirdUser(10,10)
 console.log(user2);
 
-//console.log(user2.Ricarica(5) + ' €');
-console.log('hai effettuato ' + user2.Chiamata(20) + ' minuti di chiamata');
+console.log(user2.Ricarica(5) + ' €');
+console.log('Hai effettuato ' + user2.Chiamata(20) + ' minuti di chiamata');
 console.log('Il tuo credito residuo è di ' + user2.Number404() + ' €');
 console.log('Hai effettutato ' + user2.NumeroChiamate() + ' chiamate');
 
