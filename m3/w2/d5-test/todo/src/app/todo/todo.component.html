@@ -1,0 +1,13 @@
+<div class="container">
+<div class="div1">
+  <input type="text" [(ngModel)]="input" placeholder="Aggiungi">
+  <button class="b1" (click)="aggiungi()">Aggiungi</button>
+  </div>
+
+  <div class="div2" *ngFor="let list of todo">
+    <ul>
+      <li>{{list.title}}</li>
+      <button (click)="completa()">Completato</button>
+    </ul>
+  </div>
+</div>

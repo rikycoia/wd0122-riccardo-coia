@@ -20,6 +20,7 @@ export class Todoservice {
     ];
 
 
+
     addTodo(cose:List):void{
       this.todo.push(cose);
     };

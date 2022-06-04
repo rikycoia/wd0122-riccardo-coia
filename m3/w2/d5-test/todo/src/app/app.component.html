@@ -1,21 +1,10 @@
-<router-outlet></router-outlet>
 
 <nav>
   <ul>
-      <li><a routerLink="/" >Home & Todo</a></li>
+      <li><a routerLink="/app-todo" >Home</a></li>
       <li><a routerLink="/app-todo-Completati" >Todo Completati</a></li>
 
   </ul>
 </nav>
+<router-outlet></router-outlet>
 
-<div>
-<input type="text" [(ngModel)]="input" placeholder="Aggiungi">
-<button (click)="aggiungi()">Aggiungi</button>
-</div>
-
-<div *ngFor="let list of todo">
-  <ul>
-    <li>{{list.title}}</li>
-    <button (click)="completa()">Completato</button>
-  </ul>
-</div>
