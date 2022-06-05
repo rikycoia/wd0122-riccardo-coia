@@ -4,10 +4,36 @@
   <button class="b1" (click)="aggiungi()">Aggiungi</button>
   </div>
 
+  <br>
+  <br>
   <div class="div2" *ngFor="let list of todo">
-    <ul>
+    <ul *ngIf="active" >
       <li>{{list.title}}</li>
       <button (click)="completa()">Completato</button>
+
+
+  <button >Rimuovi</button>
+      <input type="checkbox" name="cancela" [(ngModel)]="selected">
+         {{selected}}
+  </ul>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <button (click)="removeTodo()">Rimuovi selezionati</button>
+    <button (click)="nascondi()">Nascondi lista</button>
+  </div>
+
+  <br>
+  <br>
+
+  <h2 *ngIf="arrayCompletati.length > 0">Hai gia fatto le seguenti todo:</h2>
+  <div *ngFor="let list of arrayCompletati">
+    <ul >
+      <li>{{list.title}}</li>
     </ul>
   </div>
+
 </div>
