@@ -18,5 +18,16 @@ export class AuthService {
 
   saveUser(token:string){
     localStorage.setItem('token',token)
+    // questa funzione aggiunge un token al local storage
+  }
+
+  logoutUser():boolean{
+    localStorage.removeItem('token')
+    return true
+  }
+
+  isUserLoggedIn():boolean{
+    return localStorage.getItem('token') != null
+    //  questa funzione controlla che ci sia un token nel localStorage (!= null)==>se esiste
   }
 }

@@ -9,7 +9,12 @@ export class ProfiloComponent implements OnInit {
 
   constructor() { }
 
+  arrayMovie:[] = []
+
+  movieAdded:string = ''
+
   ngOnInit(): void {
   }
 
+addMovies(){}
 }

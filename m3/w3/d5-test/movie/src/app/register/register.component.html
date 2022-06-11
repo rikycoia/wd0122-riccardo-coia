@@ -1,8 +1,35 @@
-<form action="">
-  <input type="text"  [(ngModel)]="authUser.username" placeholder="Username">
-  <input type="password" [(ngModel)]="authUser.password" placeholder="Password">
-  <input type="email" [(ngModel)]="authUser.email" placeholder="Email">
-
+<!-- <form action="">
+  <input type="text"  [(ngModel)]="authUser.username" placeholder="Username" name="username">
+  <input type="password" [(ngModel)]="authUser.password" placeholder="Password" name="password">
+  <input type="email" [(ngModel)]="authUser.email" placeholder="Email" name="email">
+  <input type="text" placeholder="telefono" [(ngModel)]="authUser.telefono" id="telefono" name="telefono">
   <button (click)="register()">Register</button>
-</form>
+</form> -->
 
+<form action="">
+<div class="mb-3">
+  <label  class="form-label">Username</label>
+  <input name="username"  type="text"  class="form-control" id="exampleInputEmail1"  [(ngModel)]="authUser.username">
+  <div id="userHelp" class="form-text">Inserisci qui il tuo Username.</div>
+</div>
+
+<div class="mb-3">
+  <label  class="form-label">Password</label>
+  <input name="password" type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="authUser.password">
+  <div id="emailHelp" class="form-text">Inserisci qui la tua password.</div>
+</div>
+
+<div class="mb-3">
+  <label  class="form-label">Email address</label>
+  <input name="telefono" type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="authUser.email">
+  <div id="emailHelp" class="form-text">Inserisci qui la tua email.</div>
+</div>
+
+<div class="mb-3">
+  <label  class="form-label">Numero di telefono</label>
+  <input name="telefono" type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="authUser.telefono">
+  <div id="telHelp" class="form-text">Inserisci qui il tuo telefono.</div>
+</div>
+
+<button class="btn btn-primary" (click)="register()">Registrati</button>
+</form>

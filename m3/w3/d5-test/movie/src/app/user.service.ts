@@ -19,5 +19,5 @@ return this.http.post(this.apiUrlRegister,user)
 
 getUser(id:number){
   return this.http.get(this.apiUrl + '/' + id)
-}
+ }
 }

@@ -19,7 +19,8 @@ export class RegisterComponent implements OnInit {
   authUser:IuserRegister = {
     email: '',
     username: '',
-    password: ''
+    password: '',
+    telefono: ''
 
  }
 
