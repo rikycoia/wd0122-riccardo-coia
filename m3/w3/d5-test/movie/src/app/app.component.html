@@ -1,5 +1,5 @@
+<!--
 
-<ul>
   <li> <a [routerLink]="['/']" >Home</a> </li>
     <li> <a [routerLink]="['/profilo']">Profilo</a> </li>
 
@@ -10,8 +10,34 @@
   <li> <a [routerLink]="['/login']" >Login</a> </li>
 </ul>
 
-<hr>
-<h3><a [routerLink]="['/register']">Registrati</a> per vedere i tuoi movie preferiti</h3>
+<hr> -->
 
 
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Home</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+      <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/register']">Registrati</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/login']" >Login</a>
+        </li>
+
+
+       <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/profilo']">Profilo</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- <h3><a [routerLink]="['/register']">Registrati</a> per vedere i tuoi movie preferiti</h3> -->
 <router-outlet></router-outlet>

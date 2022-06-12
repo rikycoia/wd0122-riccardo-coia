@@ -1,66 +1,11 @@
 {
   "users": [
     {
-      "email": "a@b.com",
-      "password": "$2a$10$Q96WSg06lf161dcUK0jbOOHtIwB.h5UybP0scbKCqsdQS3PhMpQ4O",
-      "name": "Mario",
-      "id": 1
-    },
-    {
-      "email": "gigio@email.it",
-      "password": "$2a$10$.SMJC0MatLJsIxm6Ok69hOD5UMG7EPoFUsHQjQmNe5n/TZ.wHC8li",
-      "username": "riccardo",
-      "telefono": "321456987",
-      "id": 2
-    },
-    {
-      "email": "giagia@odgjndg.it",
-      "password": "$2a$10$.pargi/ej4vY.owamlw1ue6y05q7ycJAvz/jEp5MREB3MML9uspOq",
+      "email": "riccardo@outlook.it",
+      "password": "$2a$10$YxQPtYg.LvlMZpFgnYUu5OQzSp2tWQZx3GhXUIt6n0qHTxDep0qiW",
       "username": "Riccardo",
       "telefono": "7896545123",
-      "id": 3
-    },
-    {
-      "email": "boody@gmail.it",
-      "password": "$2a$10$14M1Cv74PdQY66XJNcAXdeb72H37i.iXdaiIH/nsYLuKROt5tpv72",
-      "username": "boody",
-      "telefono": "7896545123",
-      "id": 4
-    },
-    {
-      "email": "simone@gmail.it",
-      "password": "$2a$10$vDqqq1dUjWoYsu9lPWybaOD5k9EJR37sPdmtxEa/z20EU.j/V0Bi6",
-      "username": "simone",
-      "telefono": "321456987",
-      "id": 5
-    },
-    {
-      "email": "antonio@live.it",
-      "password": "$2a$10$4BnpUqk65FyGQLz9xrpMfuFzchGBNzLh2rhYW8ukjymuS/MhSKqI2",
-      "username": "antonio",
-      "telefono": "7896545123",
-      "id": 6
-    },
-    {
-      "email": "riky@outlook.it",
-      "password": "$2a$10$JAc3T.5J9BPD/L8D2z/cyOwcnuCIWJg.DnJVL64jbfYeMiJaNab/C",
-      "username": "riky",
-      "telefono": "7896545123",
-      "id": 7
-    },
-    {
-      "email": "mattia@outlook.it",
-      "password": "$2a$10$yC5dEyQUsVpvtw7vf5/8i.h0z5HGAo7gUNB8Sw14JPvBdNml.2epm",
-      "username": "",
-      "telefono": "321456987",
-      "id": 8
-    },
-    {
-      "email": "matilde92@outlook.it",
-      "password": "$2a$10$tEFNxmKOHe1s8YkBIknwyuTQprW0Mt10gcgvLNGW/YRDbdTr1NnXu",
-      "username": "matilde",
-      "telefono": "7896545123",
-      "id": 9
+      "id": 1
     }
   ]
 }
