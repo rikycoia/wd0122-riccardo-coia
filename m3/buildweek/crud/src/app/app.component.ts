@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+import { AuthService } from './auth.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crud';
+
+  constructor(private authService: AuthService, private router: Router) {}
+
+  logout(){
+    this.authService.logout();
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'l utente e satato registrato con successo',
+      showConfirmButton: false,
+      timer: 1500
+    })
+
+    this.router.navigate(['/login'])
+  }
 }

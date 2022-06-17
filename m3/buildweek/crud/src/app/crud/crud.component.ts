@@ -1,6 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs';
+import Swal from 'sweetalert2';
+import { Class } from '../class';
+import { CrudService } from '../crud.service';
+import { Ibooks } from '../ibooks';
 
 @Component({
   selector: 'app-crud',
@@ -9,62 +14,98 @@ import { Observable } from 'rxjs';
 })
 export class CrudComponent implements OnInit {
 
-  constructor(private httpClient: HttpClient) { }
+  closeResult!: string;
+  id!: number 
+  
+  constructor(private httpClient: HttpClient, private modalService: NgbModal, private crudsrt:CrudService) { }
 
+  
 
-
-  getAlbums():Observable <Object>{
-    return this.httpClient.get('https://jsonplaceholder.typicode.com/albums')
-  }
   ngOnInit(): void {
-    this.getAlbums().subscribe(this.callback)
-    console.log(this.books)
-
+    this.getposts()
+    
   }
-  callback = (res:any) => {
-    console.log(res)
-  }
+  books:Ibooks[] = []
 
-
-  books = [
-    {
-      nome:'Lo straniero',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:1
-    },
-    {
-      nome:'Alla ricerca del tempo perduto',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:2
-    },
-    {
-      nome:'Il processo',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:3
-    },
-    {
-      nome:'Il piccolo principe',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:4
-    },
-    {
-      nome:'Il vecchio e il mare',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:5
-    }
+  bookmodificato:Ibooks[] = [
   ]
-  apiUrl:string = ('https://jsonplaceholder.typicode.com/albums')
+
+  getposts(){
+    this.crudsrt.getposts().subscribe((res) =>{
+    this.books = res
+    })
+  }
+
+  openupdate(book:Ibooks){
+    this.visible = true
+    this.id = book.id!
+    this.title = book.title
+    this.body = book.body
+
+
+  }
+
+  modifica(){
+    this.crudsrt.modificapost(this.id,{body:this.body,title:this.title}).subscribe((res) =>{
+      console.log(res);
+      this.getposts()
+
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'il post e stato modificato con successo',
+        showConfirmButton: false,
+        timer: 1500
+      })
+
+   })
+  }
+
 
   delete(id:number):void{
 
-    let index:number = this.books.findIndex(book => book.id === id)
-    this.books.splice(index,1)
+    this.crudsrt.removepost(id).subscribe((res) =>{
+      let index = this.books.filter((book) => book.id !== id)
+      this.books = index
+      console.log(res)
+
+      
+
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'il post e stato eliminato con successo',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    } )
 
   }
 
-  update(id:number){
-    this.books = this.books.filter(book => book.id! === id)
+  visible = false
+  visible2 = false
 
+  
+  title:string = ''
+  body:string = ''
+
+  create(){
+
+    this.crudsrt.aggiungipost({title:this.title, body:this.body}).subscribe( (res) => {
+      console.log(res)
+      res = this.books
+      this.title = ''
+      this.body = ''
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'nuovo post creato con successo',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    })
   }
+
+  
 
 }

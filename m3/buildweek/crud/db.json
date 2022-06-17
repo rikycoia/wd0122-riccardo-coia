@@ -13,6 +13,54 @@
       "nome": "avgr",
       "cognome": "aaerg",
       "id": 2
+    },
+    {
+      "email": "dio@dio.com",
+      "password": "$2a$10$d9kjQM6kJiBuGfCU5vc7AubrIvb3wthM2SvKlZFgYCz2FaFpUBdSa",
+      "nome": "wqr",
+      "cognome": "wer",
+      "id": 3
+    },
+    {
+      "email": "cane@cane.com",
+      "password": "$2a$10$vjaSOh3T.QIW/V95OgpelO7cJFwrSBth2CFrooZE4YQPPZyLjAdse",
+      "id": 4
+    },
+    {
+      "email": "porco@porco.com",
+      "password": "$2a$10$HfhiUbvhk77Nu4URllyqh.CpJKQu4KNL1vno..vnnxrV103EOPICO",
+      "nome": "serh",
+      "cognome": "rsth",
+      "id": 5
+    },
+    {
+      "email": "poi@outlook.it",
+      "password": "$2a$10$BDSEagWowi40pyb8x816U.NMGiVvXkZV6QJa79dZVcCt.GUNE/6LS",
+      "nome": "gigio",
+      "cognome": "gigia",
+      "id": 6
+    }
+  ],
+  "posts": [
+    {
+      "title": "alchigfdgsdbsdfgsdg",
+      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus doloremque laudantium voluptas.",
+      "id": 1
+    },
+    {
+      "title": "abissi d'accaio",
+      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus doloremque laudantium voluptas.",
+      "id": 2
+    },
+    {
+      "title": "prostitute ungherese",
+      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus doloremque laudantium voluptas.",
+      "id": 4
+    },
+    {
+      "title": "il vecchio e il ma",
+      "body": "rthsrthshrtsrthsrthstrhsthrthsthshsthshshshhsh",
+      "id": 5
     }
   ]
 }
