@@ -34,33 +34,28 @@
       "id": 5
     },
     {
-      "email": "poi@outlook.it",
-      "password": "$2a$10$BDSEagWowi40pyb8x816U.NMGiVvXkZV6QJa79dZVcCt.GUNE/6LS",
-      "nome": "gigio",
-      "cognome": "gigia",
+      "email": "info@massi.com",
+      "password": "$2a$10$9KDbhRbCdBROqNMCnI/rN.oxcPCsJ0yW8QXLeuvlqqeG/RBsz18KK",
+      "nome": "Massimiliano",
+      "cognome": "Greco",
       "id": 6
     }
   ],
   "posts": [
     {
-      "title": "alchigfdgsdbsdfgsdg",
-      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus doloremque laudantium voluptas.",
+      "title": "Se una notte d'inverno un viaggiatore",
+      "body": "Se una notte d'inverno un viaggiatore è un romanzo di Italo Calvino pubblicato nel 1979.",
       "id": 1
     },
     {
-      "title": "abissi d'accaio",
-      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus doloremque laudantium voluptas.",
+      "title": "Il cacciatore di aquiloni",
+      "body": "Il cacciatore di aquiloni è il primo romanzo dello scrittore statunitense di origine afghana Khaled Hosseini, pubblicato nel 2003 ed edito in Italia dalle Edizioni Piemme nel 2004 con la traduzione di Isabella Vaj.",
       "id": 2
     },
     {
-      "title": "prostitute ungherese",
-      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus doloremque laudantium voluptas.",
-      "id": 4
-    },
-    {
-      "title": "il vecchio e il ma",
-      "body": "rthsrthshrtsrthsrthstrhsthrthsthshsthshshshhsh",
-      "id": 5
+      "title": "Alchimista",
+      "body": "Una storia di Paulo Coelho...",
+      "id": 3
     }
   ]
 }

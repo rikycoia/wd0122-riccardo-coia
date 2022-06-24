@@ -21,7 +21,8 @@ h2 {color: aqua;}
 h2 {font-weight: bold;}
 h2{text-transform: uppercase;}
 
-ul {list-style-type: circle;}
+div li {
+list-style-type: disc;}
 
 blockquote {background-color: grey;}
 blockquote {font-size: 2em;}

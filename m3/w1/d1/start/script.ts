@@ -6,9 +6,28 @@ let gamer2:number = Math.floor(Math.random() * (100 - 1) + 1);
 //creazione numero randomico
 let randomNumber:number =  Math.floor(Math.random() * (100 - 1) + 1);
 
-// creazione delle due differenze per stabili chi ci è andato più vicino
+// creazione delle due differenze per stabilire chi ci è andato più vicino
 let d1:any
 let d2:any
+
+//Creazione bottoni
+    const btng1 = document.getElementById("btng1");
+    const button1 = document.createElement("button");
+    button1.textContent = 'PLAYER 1';
+    btng1?.appendChild(button1);
+
+
+    const btng2 = document.getElementById("btng1");
+    const button2 = document.createElement("button");
+    button2.textContent = 'PLAYER 2';
+    btng2?.appendChild(button2);
+
+
+    const result = document.getElementById("result");
+    const winner = document.createElement('p');
+    winner.textContent = "THE WINNER IS ";
+    result?.appendChild(winner);
+
 
 console.log(gamer1,gamer2,randomNumber); 
 

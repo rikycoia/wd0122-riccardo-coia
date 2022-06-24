@@ -1,0 +1,38 @@
+<form [formGroup]="formG" (ngSubmit)="submit()">
+  Nome:
+  <input type="text" formControlName="name" required>
+  <span
+    *ngIf="getControl('name').invalid && getControl('name').touched"
+  >Campo obbligatorio</span>
+
+  <br>  <br>
+
+  Alterego:
+  <input type="text" formControlName="alterEgo" required>
+  <span
+    *ngIf="getControl('alterEgo').invalid && getControl('alterEgo').touched"
+  >Campo obbligatorio</span>
+
+  <br>  <br>
+
+  Enemy:
+  <input type="text" formControlName="enemy" >
+  <br>  <br>
+
+  Planet:
+  <input type="text" formControlName="planet" required>
+  <span
+    *ngIf="getControl('planet').invalid && getControl('planet').touched"
+  >Campo obbligatorio</span>
+
+  <br>  <br>
+
+  <div formArrayName="weaksess"></div>
+  Weaksess:
+  <button (click)="addWeaksess()" type="button">Add</button>
+  <input type="text" *ngFor="let w of getFormArray('weaksess');let i = index" [formControlName]="i">
+
+  <br>  <br>
+
+  <button type="submit" [disabled]="formG.invalid">SUBMIT</button>
+</form>

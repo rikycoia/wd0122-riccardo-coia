@@ -52,10 +52,9 @@ main h2 {font-weight: bold;
     main div p {color: white ;}
 
     /**ASIDE**/
-    aside div {
-border: #b7b7b7;
-                border-style: solid;}
-
+    .tuopc {margin: 20px;
+        border: #eae6e6;
+        border-style: solid}
     /**--FOOTER--**/
     footer {margin: 20px;
     border: #5c5c5c;

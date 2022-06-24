@@ -3,9 +3,22 @@ var gamer1 = Math.floor(Math.random() * (100 - 1) + 1);
 var gamer2 = Math.floor(Math.random() * (100 - 1) + 1);
 //creazione numero randomico
 var randomNumber = Math.floor(Math.random() * (100 - 1) + 1);
-// creazione delle due differenze per stabili chi ci è andato più vicino
+// creazione delle due differenze per stabilire chi ci è andato più vicino
 var d1;
 var d2;
+//Creazione bottoni
+var btng1 = document.getElementById("btng1");
+var button1 = document.createElement("button");
+button1.textContent = 'PLAYER 1';
+btng1 === null || btng1 === void 0 ? void 0 : btng1.appendChild(button1);
+var btng2 = document.getElementById("btng1");
+var button2 = document.createElement("button");
+button2.textContent = 'PLAYER 2';
+btng2 === null || btng2 === void 0 ? void 0 : btng2.appendChild(button2);
+var result = document.getElementById("result");
+var winner = document.createElement('p');
+winner.textContent = "THE WINNER IS ";
+result === null || result === void 0 ? void 0 : result.appendChild(winner);
 console.log(gamer1, gamer2, randomNumber);
 if (gamer1 == randomNumber) {
     console.log('Gamer1 ha indovinato!');

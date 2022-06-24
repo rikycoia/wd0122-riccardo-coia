@@ -17,7 +17,7 @@ export class AppComponent {
     Swal.fire({
       position: 'top-end',
       icon: 'success',
-      title: 'l utente e satato registrato con successo',
+      title: 'Log Out Effettuato',
       showConfirmButton: false,
       timer: 1500
     })

@@ -1,6 +1,6 @@
 const APPURL = 'utenti/json/users.json'
 
-let tabella = document.querySelector('#users')
+let table = document.querySelector('#users')
 
 fetch(APPURL)
 .then(res => res.json())
@@ -30,6 +30,7 @@ fetch(APPURL)
 
         tr.append(tdImg1,tdUsername,tdNome,tdCognome,tdGender,tdEmail)
 
-        tabella.append(tr)
+        table.append(tr)
     }
+
     })
